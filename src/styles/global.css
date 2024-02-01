@@ -6,6 +6,10 @@
 	/* body {
 		transition: background-color 0.5s ease;
 	} */
+	body {
+		font-family:Verdana, Geneva, Tahoma, sans-serif;
+		transition: background-color 0.5s ease;
+	}
 
 	.prose code {
 		@apply text-base;
