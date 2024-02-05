@@ -2,37 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Ysabeau Office';
+    font-style: normal;
+    font-weight: auto;
+    src: url('/fonts/Ysabeau_Office/YsabeauOffice-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ysabeau SC';
+    font-style: normal;
+    font-weight: auto;
+    src: url('/fonts/Ysabeau_SC/YsabeauSC-VariableFont_wght.ttf') format('truetype');
+}
+
 @layer base {
-	/* body {
-		transition: background-color 0.5s ease;
-	} */
-	body {
-		font-family:Verdana, Geneva, Tahoma, sans-serif;
-		transition: background-color 0.5s ease;
-	}
+    .prose code {
+        @apply text-base;
+    }
 
-	.prose code {
-		@apply text-base;
-	}
+    /* prose styles here */
+    .prose h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply text-zinc-800 dark:text-zinc-100   !important;
+        font-family: 'Ysabeau Office', sans-serif;
+        font-weight: bold;
+    }
 
-	/* prose styles here */
-	.prose h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		@apply text-zinc-800 dark:text-zinc-100   !important;
-	}
+    body {
+        font-family: 'Ysabeau Office', Verdana, Geneva, Tahoma, sans-serif;
+        transition: background-color 0.5s ease;
+        @apply max-w-full;
+        font-size: x-large;
+    }
+
+    .title,
+    header {
+        font-family: 'Ysabeau SC', sans-serif;
+        font-weight: bold;
+    }
 }
 
 .glass {
-	background: rgba(57, 56, 56, 0.52);
-	backdrop-filter: blur(13px) saturate(150%);
-	-webkit-backdrop-filter: blur(13px) saturate(150%);
-	z-index: -1;
+    background: rgba(57, 56, 56, 0.52);
+    backdrop-filter: blur(13px) saturate(150%);
+    -webkit-backdrop-filter: blur(13px) saturate(150%);
+    z-index: -1;
 }
 
 .shadow {
-	box-shadow: -5px 3px 8px 1px rgba(0, 0, 0, 0.12);
+    box-shadow: -5px 3px 8px 1px rgba(0, 0, 0, 0.12);
 }
