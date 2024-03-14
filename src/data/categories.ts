@@ -2,7 +2,7 @@
 export const CATEGORIES = [
 	'Computer Science',
 	'Psychology',
-	'Lifelong Learning',
+	'Life Advice',
 	'Personal',
 	'About'
 ] as const

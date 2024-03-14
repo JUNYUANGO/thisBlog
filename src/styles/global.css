@@ -1,20 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-    font-family: 'Ysabeau Office';
-    font-style: normal;
-    font-weight: auto;
-    src: url('/fonts/Ysabeau_Office/YsabeauOffice-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Ysabeau SC';
-    font-style: normal;
-    font-weight: auto;
-    src: url('/fonts/Ysabeau_SC/YsabeauSC-VariableFont_wght.ttf') format('truetype');
-}
 
 @layer base {
     .prose code {
@@ -29,12 +17,12 @@
     h5,
     h6 {
         @apply text-zinc-800 dark:text-zinc-100   !important;
-        font-family: 'Ysabeau Office', sans-serif;
+        font-family: IBM Plex Sans, sans-serif;
         font-weight: bold;
     }
 
-    body{
-        font-family: 'Ysabeau Office', Verdana, Geneva, Tahoma, sans-serif;
+    body {
+        font-family: IBM Plex Sans, sans-serif;
         transition: background-color 0.5s ease;
         @apply max-w-full;
         font-size: large;
@@ -42,7 +30,7 @@
 
     .title,
     header {
-        font-family: 'Ysabeau SC', sans-serif;
+        font-family: IBM Plex Sans, sans-serif;
         font-weight: bold;
     }
 }
