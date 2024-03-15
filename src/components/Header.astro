@@ -7,7 +7,6 @@ import Search from '@/components/Search'
 import TagIcon from './icons/TagIcon.astro'
 import ToggleTheme from './ToggleTheme.astro'
 
-// ADD YOUR SOCIAL NETWORKS HERE
 const SOCIALNETWORKS = [
 	{
 		name: 'Github',
@@ -37,7 +36,8 @@ const SOCIALNETWORKS = [
 				class='flex flex-col gap-4 md:flex-row md:border-r-2 border-black pr-4 dark:border-white'
 			>
 				<HeaderLink href='/tags' class='flex items-center gap-1 text-2xl md:text-2xl'>
-					<TagIcon /> Tags
+					<TagIcon />
+					 Tags
 				</HeaderLink>
 			</div>
 
@@ -64,6 +64,7 @@ const SOCIALNETWORKS = [
 		</button>
 	</div>
 </header>
+
 <script>
 	document.addEventListener('click', (event) => {
 		const menu = document.getElementById('astro-header-drawer')
