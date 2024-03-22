@@ -26,6 +26,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'IBM Plex Sans Bold';
+    src: url('/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 @layer base {
     .prose code {
         @apply text-base;
@@ -59,13 +67,29 @@
         @apply max-w-full;
         font-size: large;
     }
+
+    strong {
+        font-family: "IBM Plex Sans Bold", sans-serif;
+    }
 }
+
 
 .glass {
     background: rgba(57, 56, 56, 0.52);
     backdrop-filter: blur(13px) saturate(150%);
     -webkit-backdrop-filter: blur(13px) saturate(150%);
     z-index: -1;
+}
+
+#backToTopButton {
+    display: none; /* Hidden by default */
+    position: fixed;
+    border: none;
+    outline: none;
+    background-color: wheat;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 30px;
 }
 
 .shadow {

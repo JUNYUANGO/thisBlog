@@ -1,0 +1,26 @@
+---
+import ArrowUpward from '@/components/icons/ArrowUpward'
+---
+
+<button id='backToTopButton'>
+	<span>
+		<ArrowUpward />
+	</span>
+</button>
+
+<script>
+	window.onscroll = function () {
+		const button = document.getElementById('backToTopButton')
+		if (button) {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				button.style.display = 'block'
+			} else {
+				button.style.display = 'none'
+			}
+			const backToTopButton = document.getElementById('backToTopButton')
+			backToTopButton.addEventListener('click', function () {
+				window.scrollTo({ top: 0, behavior: 'smooth' })
+			})
+		}
+	}
+</script>
