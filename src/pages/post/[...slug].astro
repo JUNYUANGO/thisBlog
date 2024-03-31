@@ -52,11 +52,11 @@ const disqusEnabled = disqusConfig.enabled
 			<div class='sticky top-24 self-start hidden md:block transition-all duration-200'>
 				{headings && headings.length > 0 && <TableOfContents {headings} />}
 			</div>
-			<BackToTopButton />
 		</aside>
 
 		<!-- post -->
 		<article class='max-w-full w-full'>
+			<BackToTopButton />
 			<div class='prose prose-lg md:prose-xl dark:prose-invert mb-12 min-w-full'>
 				<Content components={{ pre: Code, SButton }} />
 			</div>

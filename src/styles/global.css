@@ -83,13 +83,8 @@
 
 #backToTopButton {
     display: none; /* Hidden by default */
-    position: fixed;
-    border: none;
     outline: none;
-    background-color: wheat;
     cursor: pointer;
-    padding: 20px;
-    border-radius: 30px;
 }
 
 .shadow {
